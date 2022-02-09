@@ -10,7 +10,7 @@ contract Lottery{
     }
     function alreadyEntered() view private returns(bool)
     {
-    // This function will make sure if participants is already took participate or not
+    // This function will make sure if participants have already taken participate or not
         for(uint i=0;i<participants.length;i++)
         {
             if(participants[i]== msg.sender) 
